@@ -1,0 +1,16 @@
+.Navbutton{
+    list-style: none;
+    
+
+}
+
+button{
+    font-family: "Holtwood  ";
+}
+
+
+
+@font-face {
+    font-family:"Holtwood" ;
+    src: url("../font/HoltwoodOneSC-Regular.ttf");
+}
