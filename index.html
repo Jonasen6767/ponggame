@@ -1,60 +1,36 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="../js/script.js"></script>
+    <title>Pong Menu</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
+<body class="meny-side">
+    <main class="meny">
+        <section class="felt">
+            <header class="velkommen-boks">
+                <h1 class="tittel">WELCOME!</h1>
+            </header>
 
+            <nav class="knapper" aria-label="Hovedmeny">
+                <a class="knapp" href="./html/pong.html">MULTIPLAYER</a>
+                <a class="knapp" href="./html/versus-ai.html">VERSUS AI</a>
+                <a class="knapp" href="./html/info.html">INFO</a>
+                <a class="knapp" href="./html/customizer.html">CUSTOMIZER</a>
+                <a class="knapp" href="./html/options.html">OPTIONS</a>
+            </nav>
+        </section>
 
-
-
-
-
-
-
-
-
-
-
-
-<body>
-    
-<div>
-
-
-
-
-
-
-
-<nav>
-<li class="Navbutton">
-    <a href="./"><button>Multiplayer</button></a>
-</li>
-
-
-<li class="Navbutton">
-<a href="./"><button>Versus Ai</button></a>
-</li>
-
-<li class="Navbutton">
-<a href="./"><button>Info</button></a>
-</li>
-
-<li class="Navbutton">
-<a href="./"><Button>Customiser</Button></a>
-</li>
-
-<li class="Navbutton">
-<a href="./"><Button>Options</Button></a>
-</li>
-
-</nav>
-
-    </div>
-    
-
+        <aside class="pong-del" aria-hidden="true">
+            <span class="strek strek-topp"></span>
+            <div class="pong-ord">
+                <span class="pong-bokstav">P</span>
+                <span class="ball"></span>
+                <span class="pong-bokstav">NG!</span>
+            </div>
+            <span class="strek strek-bunn"></span>
+        </aside>
+    </main>
 </body>
 </html>
