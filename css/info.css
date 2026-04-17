@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Holtwood";
+    src: url("../font/HoltwoodOneSC-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #5a4496;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.side {
+    width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 50px 0 70px;
+}
+
+.topp {
+    margin-bottom: 40px;
+    padding: 50px;
+    background: #000000;
+    text-align: center;
+}
+
+.topp h1,
+.boks h2,
+.kort h3,
+.tilbake {
+    font-family: "Holtwood", serif;
+}
+
+.topp h1 {
+    margin: 0 0 20px;
+    font-size: 88px;
+}
+
+.topp p {
+    margin: 0;
+    font-size: 30px;
+}
+
+.boks {
+    margin-bottom: 40px;
+    padding: 40px;
+    background: #9c91bd;
+    color: #101010;
+}
+
+.boks h2 {
+    margin: 0 0 24px;
+    font-size: 42px;
+}
+
+.boks p,
+.boks li {
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.rader {
+    display: flex;
+    gap: 30px;
+}
+
+.kort {
+    width: 50%;
+    min-height: 260px;
+    padding: 30px;
+    background: #ececec;
+}
+
+.kort h3 {
+    margin: 0 0 20px;
+    font-size: 34px;
+}
+
+.kort p {
+    margin: 16px 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 28px;
+}
+
+.tilbake {
+    display: inline-block;
+    padding: 22px 30px;
+    background: #ececec;
+    color: #101010;
+    text-decoration: none;
+    font-size: 28px;
+}

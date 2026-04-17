@@ -1,18 +1,181 @@
-.Navbutton{
-    list-style: none;
-    
-
-}
-
-button{
-    font-family: "Holtwood  ";
-}
-
-.test{
-    color: black;
-}
-
 @font-face {
-    font-family:"Holtwood" ;
+    font-family: "Holtwood";
     src: url("../font/HoltwoodOneSC-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.tittel,
+.knapp,
+.pong-bokstav,
+.spill-boks h1,
+.tilbake {
+    font-family: "Holtwood", serif;
+}
+
+.meny-side {
+    min-height: 100vh;
+    background: #5a4496;
+    overflow-x: hidden;
+}
+
+.meny {
+    min-height: 100vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding-left: 5%;
+}
+
+.felt {
+    width: 35%;
+    min-height: 100vh;
+    padding: 9px 0 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: #9c91bd;
+    box-shadow: 5px 0 0 rgba(255, 255, 255, 0.32);
+}
+
+.velkommen-boks {
+    width: 97%;
+    padding: 27px 5px 31px;
+    text-align: center;
+    background: #ececec;
+}
+
+.tittel {
+    margin: 0;
+    color: #101010;
+    font-size: 38px;
+}
+
+.knapper {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.knapp {
+    width: 84%;
+    padding: 17px 5px;
+    background: #fbfbfb;
+    color: #000000; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 17px;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+}
+
+.knapp:hover,
+.knapp:focus-visible {
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.02);
+    outline: none;
+}
+
+.pong-del {
+    width: 55%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 95px;
+    padding-left: 0;
+    color: #fbfbfb;
+    transform: translateX(0);
+}
+
+.strek {
+    width: 30px;
+    background: #ececec;
+}
+
+.strek-topp,
+.strek-bunn {
+    height: 260px;
+}
+
+.strek-topp {
+    align-self: flex-end;
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+.strek-bunn {
+    align-self: flex-start;
+    margin-bottom: 0;
+    margin-top: 45px;
+}
+
+.pong-ord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.pong-bokstav {
+    font-size: 80px;
+    line-height: 73px;
+    letter-spacing: 1px;
+}
+
+.ball {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #d9d9d9;
+}
+
+.spill-side {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: linear-gradient(135deg, #5a4496 0px, #7c6ab0 1000px);
+    color: #fbfbfb;
+}
+
+.spill-boks {
+    width: 720px;
+    padding: 32px;
+    background: rgba(16, 16, 16, 0.18);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(6px);
+}
+
+.spill-boks h1 {
+    margin: 0 0 12px;
+    font-size: 60px;
+}
+
+.spill-boks p {
+    margin: 0 0 18px;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.tilbake {
+    display: inline-block;
+    padding: 14px 18px;
+    background: #ececec;
+    color: #101010;
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 30px;
 }
